@@ -30,7 +30,8 @@ def gross_for_director(director_data)
     total += nds[director_data][:movies][movie_index][:worldwide_gross]
     movie_index += 1
   end
-end  
+  total
+end
 
 def total_value_of_spinner(nds, row_index, column_index)
   coordinate_total = 0
